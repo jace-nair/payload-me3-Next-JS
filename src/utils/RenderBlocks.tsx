@@ -1,11 +1,13 @@
 import CoverBlockServer from "@/blocks/cover/Server";
+import ImageBlockServer from "@/blocks/image/Server";
 import { Page } from "@/payload-types";
 import React, { Fragment } from 'react';
 
 
 /* Map block slugs to actual block components */
 const blockComponents: { [key: string]: React.ComponentType<any> } = {
-    cover: CoverBlockServer
+    cover: CoverBlockServer,
+    image: ImageBlockServer,
 };
 
 /*This component goes through the page layout and for every block in the page layout

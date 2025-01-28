@@ -1,7 +1,4 @@
-export default function Home() {
-    return(
-        <main className="bg-slate-300">
-            <h1>Home Page</h1>
-        </main>
-    );
-}
+/* Import default PageTemplate from Page component of [slug] folder and export it without any slug */
+import PageTemplate from "./[slug]/page";
+
+export default PageTemplate;
